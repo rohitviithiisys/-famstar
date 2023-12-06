@@ -1,23 +1,24 @@
 {{ define "main" }}
-	
-    <!-- Hero Section -->
-    <div class="aboutpage">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9 ml-auto mr-auto">
-                    <h1>BRANDS HAVE WORKED MANUALLY FOR DOING INFLUENCER MARKETING TO DATE.</h1>
-					<p class="mb-5"> <strong>We will help them experience the ease of Influencer Marketing with a twist of technology now.</strong>  </p> 
-					
-					<!-- <figure class="topfigure"><img src='{{ "/images/aboutbanner.jpg" | absURL }}' alt=""></figure> -->
-					<p class="mb-3">We are building a digital platform for Indian content creators. We understand the value of influencers, their hard work and how with their innovative ideas and creative minds</p>
 
-					<p  class="mb-3">They are helping people engage with the brands.</p>
+<!-- Hero Section -->
+<div class="aboutpage">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 ml-auto mr-auto">
+                <h1>BRANDS HAVE WORKED MANUALLY FOR DOING INFLUENCER MARKETING TO DATE.</h1>
+                <p class="mb-5"> <strong>We will help them experience the ease of Influencer Marketing with a twist of technology now.</strong> </p>
 
-					<p  class="mb-3">Famstar will be the community wherein brands will make use of the top influencers of different niche that will enhance their brand name to their target audience. At the end of the day,  Brands need engagement and influencers need to build their portfolio so Famstar will bridge the gap and make the brand’s and influencers life easy by connecting them through our platform where you will get the best of the best influencers to market your brand uniquely. People buy things from recommendations of people they like and trust, so Famstar will help brands reach people via the most-liked and trusted people around them. </p>
-                </div>
+                <!-- <figure class="topfigure"><img src='{{ "/images/aboutbanner.jpg" | absURL }}' alt=""></figure> -->
+                <p class="mb-3">We are building a digital platform for Indian content creators. We understand the value of influencers, their hard work and how with their innovative ideas and creative minds</p>
+
+                <p class="mb-3">They are helping people engage with the brands.</p>
+
+                <p class="mb-3">Famstar will be the community wherein brands will make use of the top influencers of different niche that will enhance their brand name to their target audience. At the end of the day, Brands need engagement and influencers need to build
+                    their portfolio so Famstar will bridge the gap and make the brand’s and influencers life easy by connecting them through our platform where you will get the best of the best influencers to market your brand uniquely. People buy things
+                    from recommendations of people they like and trust, so Famstar will help brands reach people via the most-liked and trusted people around them. </p>
             </div>
-			
-			<!-- <div class="row aboutinfo">
+        </div>
+        <!-- <div class="row aboutinfo">
 				<div class="col-md-4 mt-md-0 mt-4">
 					<figure class="mb-0"><img src='{{ "/images/noo1.png" | absURL }}' alt=""></figure>
 					<h5>Create Ad</h5>
@@ -36,39 +37,38 @@
 					<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown.</p>
 				</div>
 			</div> -->
-			
-			<!-- <div class="w-100 text-center mb-5"><h5>We are what we believe in, and we believe in INNOVATION &amp; TRANSPARENCY!<h5></div> -->
+
+        <!-- <div class="w-100 text-center mb-5"><h5>We are what we believe in, and we believe in INNOVATION &amp; TRANSPARENCY!<h5></div> -->
+    </div>
+</div>
+<!-- Hero Section -->
+<div class="clearfix"></div>
+
+
+<div class="howitworkssection pinkbar mb-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 ml-auto mr-auto text-center">
+                <h3 class="purpletxt">Our People</h3>
+                <!-- <p>Get more people talking about your brand. Measure the amount you need to add to your campaign to make better use of influencers' high engagement rates with our Engagement Calculator.</p> -->
+            </div>
+        </div>
+
+        <div class="row mt-5">
+
+            {{range .Site.Data.teams.items}}
+            <div class="col-lg-3 col-md-4 mb-4">
+                <div class="teambox bg1">
+                    <figure><img src='{{ .image | absURL }}' alt=""></figure>
+                    <h3>{{.name }}</h3>
+                    <p>{{ .pos }}</p>
+                    <!-- <p><a href="{{.linkedin}}">Linkedin</a> <a href="{{.twitter}}">Twitter</a></p> -->
+                </div>
+            </div>
+            {{end}}
         </div>
     </div>
-    <!-- Hero Section -->
-    <div class="clearfix"></div>
+</div>
 
 
-	<div class="howitworkssection pinkbar mb-4 mt-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9 ml-auto mr-auto text-center">
-					<h3 class="purpletxt">Our People</h3>
-					<!-- <p>Get more people talking about your brand. Measure the amount you need to add to your campaign to make better use of influencers' high engagement rates with our Engagement Calculator.</p> -->
-				</div>
-			</div>
-			
-			<div class="row mt-5">
-
-				{{range .Site.Data.teams.items}}
-				<div class="col-lg-3 col-md-4 mb-4">
-					<div class="teambox bg1">
-						<figure><img src='{{ .image | absURL }}' alt=""></figure>
-						<h3>{{.name }}</h3>
-						<p>{{ .pos }}</p>
-						<!-- <p><a href="{{.linkedin}}">Linkedin</a> <a href="{{.twitter}}">Twitter</a></p> -->
-					</div>
-				</div>
-				{{end}}			
-			</div>
-		</div>
-	</div>
-
-	
-	{{- partial "subscribesection.html" . -}}
-{{end}}
+{{- partial "subscribesection.html" . -}} {{end}}
