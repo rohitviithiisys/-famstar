@@ -1,0 +1,79 @@
+baseURL = "https://www.famstar.in/" # base url update
+languageCode = "en-us"
+title = "best influencer marketing platform india"
+
+############################## navigation ###############################
+[menu]
+
+  
+
+  [[menu.main]]
+  name = "Influencers"
+  identifier = "influencers"
+  URL = "/influencers"
+  weight = 1
+
+  [[menu.main]]
+  name = "Brands"
+  identifier = "brands"
+  URL = "/brands"
+  weight = 2
+
+  [[menu.main]]
+  name = "Blog"
+  identifier = "blog"
+  URL = "https://www.famstar.in/blog/"
+  weight = 3
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  URL = "/about"
+  weight = 4
+
+  [[menu.main]]
+  name = "Contact"
+  identifier = "contact"
+  URL = "/contact"
+  weight = 5
+
+  [[menu.main]]
+  name = "Try Now"
+  identifier = "login"
+  URL = "https://forms.gle/wvp7KYvsYfCD5dKp8"
+  weight = 6
+
+  [[menu.main]]
+  name = "Language"
+  identifier = "language"
+  URL = ""
+  weight = 7
+  
+[params]
+logo = "/images/logo.png"
+
+[[params.apps]]
+title = "googlePlay"
+url = "https://play.google.com/store/apps/details?id=com.famstar.android"
+image= "/images/playstore.png"
+
+[[params.apps]]
+title = "IOSapp"
+url = "https://apps.apple.com/in/app/famstar/id1561400242"
+image= "/images/appstore.png"
+
+  
+  
+
+  
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+
+items:
+  - name:  Ria Sawhney
+    pos: Founder
+    image: https://famstar.s3.ap-south-1.amazonaws.com/team/Ria.jpg
+    linkedin:
+    twitter:
+  - name:  Gaurav Saini
+    pos: "Co-founder"
+    image:  https://famstar.s3.ap-south-1.amazonaws.com/team/Gaurav.jpg
+    linkedin:
+    twitter:
+  # - name:  Divy
+  #   pos: Engineering
+  #   image:  /images/person1.png
+  #   linkedin:
+  #   twitter:
+  - name:  Ajay
+    pos: Engineering
+    image:  https://famstar.s3.ap-south-1.amazonaws.com/team/Ajay.jpg
+    linkedin:
+    twitter:
+  - name:  Rahul
+    pos: Engineering
+    image:  https://famstar.s3.ap-south-1.amazonaws.com/team/rahul.jpg
+    linkedin: https://linkedin.com/in/rahul-bera-
+    twitter:
+  - name:  Chelsea
+    pos: Growth & Community
+    image:  https://famstar.s3.ap-south-1.amazonaws.com/team/Chelsea.jpg
+    linkedin:
+    twitter:
+  - name:  Juhi
+    pos: Growth
+    image:  /images/juhi.jpg
+    linkedin:
+    twitter:
+  - name:  Arya Bamnot
+    pos: Creative & Design
+    image:  https://famstar.s3.ap-south-1.amazonaws.com/team/arya.jpg
+    linkedin:
+    twitter:
+  - name:  Kaashni
+    pos: Content
+    image:  /images/kaashni.jpg
+    linkedin:
+    twitter:

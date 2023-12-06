@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width:969px) and (max-width:1024px){
+.bsnav-sticky-slide .navbar-nav .nav-link{padding:5px 8px;}
+.mainbanner, .influencebanner{background-size:50%;}
+#hero h4{font-size:18px;}
+#hero h1{font-size:30px;}
+.slickslide h2{color: #2C2B30; font-size:22px !important;}
+.social::before{width:125px;}
+.social::after{width:125px;}
+}
+
+@media screen and (max-width:1023px) {
+.bsnav-sticky.bsnav-sticky-slide{background:transparent !important;}
+.social::before{width:125px;}
+.social::after{width:125px;}
+.heroimg{margin-top:35px; }
+#whychoose .grids{padding:0px 8px 20px;}
+.mainbanner, .influencebanner{background-size:50%;}
+.navbar-nav{background:#fff; padding:15px;}
+#whychoose .grids figure img{width:100%; margin-top:0;}
+}
+
+
+@media screen and (max-width: 767px) {
+  .rowitems{flex-direction:column;}
+  .rowitems:nth-child(odd) .gridcontent{order: 2; text-align:center;}
+  .rowitems:nth-child(even) .gridcontent{order: 1; text-align:center; margin-top:25px;}
+
+  .mainbanner, .influencebanner{padding:0px 15px 55px 15px; background-size:50%;}
+  #hero{
+    padding-left: 0px;
+  }
+  #hero h1{font-size:19px; padding-top: 46px;}
+  #hero h4{font-size:19px; line-height: 1.7rem;}
+  #hero h3 {font-size:18px;}
+  .bannerleft{margin-top:331px;}
+  .bannerleft h3{font-size:16px;}
+  .followersection{
+    font-size: 16px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .followersection img{
+    max-width: 50%;
+  }
+  h3{font-size:22px;}
+  .rowitems .gridcontent{margin-top:0;}
+  .rowitems .gridcontent h2{font-size:22px !important;}
+  .rowitems .gridcontent h5{font-size:16px; line-height:1.3;}
+  .social::before{display:none;}
+  .social::after{display:none;}
+  .social{margin-top:20px;}
+  #toolsection .rightcolcontent{padding:30px 15px;}
+  .footer-newsletter{margin-top:25px;}
+  .getimg-txt{position: absolute; top:37%; right:0%; left:-2%;}
+  .darkdes1{order: 2;}
+  .darkdes2{order: 1;}
+  #businessaccess h3{font-size:18px;}
+  .navbar-nav{margin-top:15px;}
+  .topblocktxt h3{font-size:22px;}
+  .followersection1 .fstxt2{left:170px;}
+  .banner-download{width:100%;}
+  #hero.influencebanner h2{font-size:20px !important; line-height: 21px !important;}
+  #influencertop h3{font-size:20px;}
+  .customerservicesection{padding-bottom: 50px;}
+  .customerservicesection h1, .inspiresection h2{font-size:19px;}
+  .customerservicesection{text-align:center;}
+  .customerservicesection .get-arrow{margin-bottom:20px; margin-top: 12px;}
+  .inspiresection .col-md-6.pl-5{padding-left:15px !important;}
+  .happycustomer .col-md-6.pl-0{padding-left:15px !important; margin-top:20px;}
+
+  .carouselsection .owl-theme .owl-nav{display:none !important;}
+  .carouselsection .owl-carousel .owl-dots{display:block; margin-top:20px;}
+  .rowitems .imgcontent img {margin-bottom: 15px;}
+  #keysection .keybottom img{margin-top: 25px;}
+  .creativecol{margin-top: 15px;}
+  .footer h2 {font-size: 24px !important;color: #fff;font-weight: 600;margin-top: 12px;margin-bottom: 0;}
+  .imagetext p{font-size: 12px !important; line-height: 13px !important;}
+  .imagetext h1{font-size: 40px; margin-bottom: 0;}
+  #bottombg .imagetext{top: 34%;}
+  .client-logo{display: flex; flex-wrap: wrap;}
+  .client-logo li{flex: 50%; width: 50%;}
+  #clientscroll li{margin: 0; margin-top: 10px;}
+  .creativecol{border-left: 10px solid #f7f5ff; border-top: 10px solid #f7f5ff;}
+  .topblocktxt h3 {line-height: 24px;}
+  #whyinfluence h3{font-size: 22px !important;}
+  #scholor .darkimg p{font-size: 12px !important;
+    line-height: 12px !important;}
+    .banner-download form input[type="submit"]{font-size: 13px; padding: 0 13px;}
+    .topblockimg img{align-items: center; margin-left: -24px;}
+    #hero .bannerbtn a{font-size: 12px !important;}
+    .panel-default > .panel-heading a {font-size:22px;}
+    .pinkbar .newbtn{font-size: 11px;}
+    .customerservicesection h4{font-size: 20px;}
+    .inspiresection h2{font-size: 20px !important;}
+    .nav-tabs{height: 70px;}
+    .topblockimg img{margin-left: 0; max-width: 100%;}
+    #toolsection .toolscol figure::after{content: none;}
+    #hero{padding-bottom: 0;}
+    .aboutpage h2{font-size: 22px !important;}
+    .navbar-brand img{max-width: 130px;}
+    .influencers-hero li img{  max-width: 60px;}
+    .mobhide{display: none;}
+    .innercontentarea h2{font-size: 22px !important; line-height: 25px !important; font-weight: 600 !important; margin-top: 25px;}
+    .innercontentarea h3{font-size: 21px !important; font-weight: 500 !important;}
+    .footer h2{padding: 0;}
+    #clientscroll h2{font-size: 22px !important; font-weight: 600 !important;}
+    .image-p{font-size: 14px !important; line-height: 18px !important;}
+    .dbba{padding-bottom: 150px;}
+    .btnfloat{position: static; bottom: -53px;}
+}
+
+
+@media screen and (max-width:479px){
+  .imgcontent{order: 1;}
+  .gridcontent{order: 2;}
+  .mainbanner, .influencebanner{padding:0px 15px 55px 15px; background-size:100%;}
+}

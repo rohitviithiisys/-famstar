@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>{{ .Title }}</title>
+        {{ "<!-- mobile responsive meta -->" | safeHTML }}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+        <meta name="keywords" content="{{range .Params.keywords}}{{.}}{{end}}">
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ hugo.Generator }}
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Top Menu Css -->
+	<link rel="stylesheet" type="text/css" href='{{ "/css/bsnav.min.css" | absURL }}'>
+
+	<!-- Custom Css -->
+	<link href='{{ "/boxicons/css/boxicons.min.css" | absURL }}' rel="stylesheet">	
+	<link href='{{ "/css/style.css" | absURL }}'  rel="stylesheet">
+	<link href='{{ "/css/custommedia.css" | absURL }}' rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href='{{ "/owlcarousel/owl.carousel.min.css" | absURL }}'>
+    <link rel="stylesheet" href='{{ "/owlcarousel/owl.theme.default.min.css" | absURL }}' >
+
+    {{/*  Favicon  */}}
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link rel="shortcut icon" href='{{"/images/fav.png" | absURL}}' type="image/x-icon">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K8SP66V');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8SP66V"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->

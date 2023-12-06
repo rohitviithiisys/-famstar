@@ -1,0 +1,370 @@
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+
+<!-- client scroll slick slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<!-- slick end -->
+
+<!-- Sticky Navbar -->
+<script src='{{ "/js/bsnav.min.js" | absURL }}'></script>
+<script>
+  $(".newbtn").click(function () {
+    if ($(this).data("closedAll")) {
+      $(".howitworkssection .collapse").collapse("show");
+    } else {
+      $(".howitworkssection .collapse").collapse("hide");
+    }
+
+    // save last state
+    $(this).data("closedAll", !$(this).data("closedAll"));
+  });
+
+  // init with all closed
+  $(".newbtn").data("closedAll", true);
+</script>
+<!-- Owl Carousel -->
+<script src='{{ "/owlcarousel/owl.carousel.js" | absURL }}'></script>
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 5,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 1,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: true,
+          margin: 30,
+        },
+      },
+    });
+
+    $(".owl-two").owlCarousel({
+      animateOut: "slideOutDown",
+      loop: true,
+      margin: 5,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 1,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: true,
+          margin: 20,
+        },
+      },
+    });
+
+    $(".owl-three").owlCarousel({
+      loop: true,
+      margin: 5,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: false,
+          margin: 10,
+        },
+      },
+    });
+  });
+
+  // slick slider core js
+  $(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
+  // end
+
+  $("#furmsubs").on("submit", function (e) {
+    var dataString = $(this).serialize();
+
+    // alert(dataString); return false;
+
+    $.ajax({
+      type: "POST",
+      url: "https://api.famstar.in/subscribe",
+      data: dataString,
+      success: function () {
+        //  $("#contact_form").html("<div id='message'></div>");
+        //  $("#message")
+        //    .html("<h2>Contact Form Submitted!</h2>")
+        //    .append("<p>We will be in touch soon.</p>")
+        //    .hide()
+        //    .fadeIn(1500, function () {
+        //      $("#message").append(
+        //        "<img id='checkmark' src='images/check.png' />"
+        //      );
+        //    });
+      },
+    });
+
+    e.preventDefault();
+  });
+
+  // $("form").on("submit", function (e) {
+  //     var dataString = $(this).serialize();
+
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "bin/process.php",
+  //       data: dataString,
+  //       success: function () {
+  //         // Display message back to the user here
+  //       }
+  //     });
+
+  //     e.preventDefault();
+  // });
+
+  // var settings = {
+  //   "url": "https://api.famstar.in/subscribe?type=Influencer&email=abc@gmail.com",
+  //   "method": "POST",
+  //   "timeout": 0,
+  // };
+
+  // $.ajax(settings).done(function (response) {
+  //   console.log(response);
+  // });
+
+  $("#furmsubs22").on("submit", function (e) {
+    var dataString = $(this).serialize();
+
+    // alert(dataString); return false;
+
+    $.ajax({
+      type: "POST",
+      url: "https://api.famstar.in/subscribe",
+      data: dataString,
+      success: function () {
+        alert("submit success");
+      },
+    });
+
+    e.preventDefault();
+  });
+
+  $("#furmsubs").submit(function (event) {
+    console.log("videoUploadFile");
+    event.preventDefault(); //prevent default action
+    var post_url = "https://api.famstar.in/subscribe"; //get form action url
+    var request_method = $(this).attr("method"); //get form GET/POST method
+    var form_data = $(this).serialize(); //Encode form elements for submission
+
+    $.ajax({
+      url: post_url,
+      type: request_method,
+      data: form_data,
+    }).done(function (response) {
+      alert("success");
+      $("#server-results").html(response);
+    });
+  });
+
+  //   $(function() {
+  //       $("#btnsunscribe").click(function() {
+  //           // alert("you will redirect sdsafs");
+  //
+  // //           $.ajax({
+  // //               type: "POST",
+  // //               url: "https://api.famstar.in/subscribe/GetResponse",
+  // //               data: {},
+  // //               contentType: "application/json; charset=utf-8",
+  // //               dataType : "json",
+  // //               success: function (response) {
+  // //                   if(response.d == true){
+  // //                       alter("you will redirect");
+  // //                       window.location = "/thanks/";
+  // //
+  // //                   }
+  // //               },
+  // //               failure: function(response){
+  // //                   alert(response.d);
+  // //               }
+  // //           });
+  // //       });
+  //
+  //
+  //   //     $("#subContact").click(function() {
+  //   //         // alert("you will redirect sdsafs");
+  //   //
+  //   //         $.ajax({
+  //   //             type: "POST",
+  //   //             url: "https://api.famstar.in/contact",
+  //   //             data: {},
+  //   //             contentType: "application/json; charset=utf-8",
+  //   //             dataType : "json",
+  //   //             success: function (response) {
+  //   //                 if(response.d == true){
+  //   //                     alter("you will redirect");
+  //   //                     window.location.href = "/thanks/";
+  //   //
+  //   //                 }
+  //   //             },
+  //   //             failure: function(response){
+  //   //                 alert(response.d);
+  //   //             }
+  //   //         });
+  //   //     });
+  //
+  //   });
+
+  let contactFormSubmit = document.getElementById("contactForm");
+
+  contactFormSubmit.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phoneNumber").value;
+    let body = document.getElementById("body").value;
+
+    let influencerCheckBox = document.getElementById("customRadio1").checked;
+    let brandCheckBox = document.getElementById("customRadio2").checked;
+    let type;
+
+    if (influencerCheckBox) {
+      type = "Influencer";
+    } else {
+      type = "Brand";
+    }
+
+    let response = await fetch("https://api.famstar.in/contact", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ name, email, phoneNumber, body, type }),
+    });
+
+    if (response.ok) {
+      window.location = "/thanks";
+    } else {
+      alert("Some error occured");
+    }
+  });
+
+  let subscribeForm = document.getElementById("subscribeForm");
+
+  subscribeForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    let influencerCheckBox = document.getElementById("influencerCheck").checked;
+    let brandCheckBox = document.getElementById("brandCheck").checked;
+    let type;
+
+    let email = document.getElementById("subscriberEmail").value;
+
+    if (influencerCheckBox) {
+      type = "Influencer";
+    } else {
+      type = "Brand";
+    }
+
+    let response = await fetch("https://api.famstar.in/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ email, type }),
+    });
+
+    if (response.ok) {
+      window.location = "/thanks_subscribe";
+    } else {
+      alert("Some error occured");
+    }
+  });
+  //
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id=%27+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K8SP66V');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-K8SP66V"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->

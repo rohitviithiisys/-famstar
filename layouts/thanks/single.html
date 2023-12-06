@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class="container pb-5">
+	<div class="row align-items-center pt-150">
+		<div class="col-12 text-center thanks">
+			<img src="{{.Params.image}}" alt="{{.Title}}" class="img-thanks">
+			{{.Content}}
+			{{if .Params.back_home }}
+			<p class="mt-4"><a href="/">Back To Home ></a></p>
+			{{end}}
+		</div>
+	</div>
+
+</div>
+
+
+	
+	{{- partial "subscribesection.html" . -}}
+{{end}}

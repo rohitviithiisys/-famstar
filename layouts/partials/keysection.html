@@ -1,0 +1,24 @@
+<!-- key to success -->
+<div id="keysection">
+    <div class="container">
+        <div class="row align-items-center mx-md-0">
+            <div class="col-lg-6">
+                <h5>Join the community and get discovered by leading brands!                </h5>
+                <h3>IT IS YOUR TIME TO GROW THROUGH FAMSTAR.
+                    USE YOUR CREATIVITY TO EARN BIG
+                    </h3>
+                <p>Saturated and highly competitive, we know how difficult influencer marketing can be without the right tools. It is no longer a social media hobby, but a full-time career that requires the constant creation of engaging content. With your time getting spent in researching, planning, analysing, writing, and web management of this content, we make it easy for brands to find you and pay for your hard work. Famstar is the top platform for influencers as it is a  transparent platform that makes it easy for you to get discovered, complete your projects and earn big time.</p>
+                <p class="mt-3">Download the Famstar app, and start earning right away.
+                </p>
+                <div class="w-100 mt-4 text-center text-md-left store">
+                    {{range .Site.Params.apps}}
+                    <a href="{{.url}}" target="_blank"><img src="{{.image | absURL}}" alt="{{.title}}" ></a> 
+                    {{end}}
+                   
+                </div>
+            </div>
+            <div class="col-lg-6 text-center keybottom"><img src="{{.Site.BaseURL}}/images/img6.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<!-- key to success section Ends -->

@@ -1,0 +1,16 @@
+
+items:
+  - name:  Shruthi Bhojamma
+    logo: "https://famstar.s3.ap-south-1.amazonaws.com/bb4.webp"
+    brand_name: HCCB
+    informtion: "Famstar provided us with executing the campaign for HCCB's 14th anniversary just so seamlessly. It was so easy for us to check the analytics of our campaign and know how well it performed for us. Thanks to team Famstar!"
+    image: "/images/happy1.png"
+    user_image:
+  - name:  Nitin Narang
+    logo: "https://famstar.s3.ap-south-1.amazonaws.com/bb6.png"
+    brand_name: T-Series
+    informtion: "Working with Famstar turned out to be really impressive for us. We reached to them for the influencer marketing of our new song release to which they outstood on the expectations and that too in such a short and sudden notice."
+    image: "/images/happy2.png"
+    user_image:
+
+

@@ -1,0 +1,10 @@
+	
+
+	<!-- test -->
+	<div class="container" id="clientscroll">
+		 <section class="customer-logos slider">
+			{{ range  .Site.Data.clients.items   }}							
+				<div class="slide"><div class="client-slide"><img src="{{ .image | absURL }}" alt="{{.brand}}" class="img-fluid"></div> </div>
+		 	{{end}}
+		 </section>
+	</div>

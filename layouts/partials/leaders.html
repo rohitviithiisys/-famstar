@@ -1,0 +1,60 @@
+
+
+	<!-- Why Choose -->
+	<div id="whychoose">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center topblocktxt">
+					<span class="blocktxt">Why Choose Us</span>
+					<h3>Brand’s Camapign Insights</h3>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="carouselsection">
+						<div class="owl-carousel owl-theme">
+							{{range .Params.insights.lists}}
+
+							<div class="item">
+								 <div class="grids purple">
+									<figure><img src="{{.image}}" alt=""></figure>
+									<div class="choosecontent">
+										<h6>{{.subTitle}}</h6>
+										<h4>{{.title}}</h4>
+										<div class="row">
+											<div class="col-md-3 col-6 text-center p-0">
+												<span>{{.creators}}</span>
+												<p>Creators</p>
+											</div>
+			
+											<div class="col-md-3 col-6 text-center p-0">
+												<span>{{.reach}}</span>
+												<p>Reach</p>
+											</div>
+			
+											<div class="col-md-3 col-6 text-center p-0">
+												<span>{{.views}}</span>
+												<p>Views</p>
+											</div>
+			
+											<div class="col-md-3 col-6 text-center p-0">
+												<span>{{.engagement}}</span>
+												<p>Engagement</p>
+											</div>
+										</div>
+										<!-- <div class="getmore mt-3"><a class=" transparentbtn1 btn-arrow" href="#">View More</a></div> -->
+									</div>
+								</div>
+							 </div>
+
+							 {{end}}
+							 
+						 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Why Choose Ends -->
