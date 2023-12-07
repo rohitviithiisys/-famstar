@@ -28,14 +28,14 @@ insights:
  lists:
  - title: "HCCB Anniversary Sand Sculpture"
    subTitle: "HCCB"
-   image: "https://famstar.s3.ap-south-1.amazonaws.com/bb4.webp"
+   image: "images/influencers-1.png"
    creators: 9 
    reach: "144k"
    views: "173k"
    engagement: "26.65%"
  - title: "Solo Laila Song Release- Ipsitaa"
    subTitle: "T-Series"
-   image: "https://famstar.s3.ap-south-1.amazonaws.com/bb6.png"
+   image: "images/influencers-1.png"
    creators: 100 
    reach: "620k"
    views: "800k"

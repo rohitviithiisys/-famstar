@@ -1,20 +1,20 @@
 
 items:
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb1.png
+    image: images/influencers-1.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb2.jpg
+    image: images/influencers-2.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb3.png
+    image: images/influencers-3.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb4.webp
+    image: images/influencers-4.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb5.jpg
+    image: images/influencers-5.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb6.png
+    image: images/influencers-1.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb7.png
+    image: images/influencers-2.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb8.png
+    image: images/influencers-4.png
   - brand: 
-    image: https://famstar.s3.ap-south-1.amazonaws.com/bb9.png
+    image: images/influencers-3.png

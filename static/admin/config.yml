@@ -94,5 +94,20 @@ collections:
               - {label: faq Answers, name: 'hBefaqBoxAnswers', widget: 'string'}
               - {label: faq href, name: 'hrefAnswers', widget: 'string'} 
               - {label: faq id, name: 'idAnswers', widget: 'string'} 
+      - label: carousel
+        name: carousel
+        widget: "list"
+        create: true
+        collapsed: true
+        fields:
+          - {label: carousel Title, name: 'titlecarousel', widget: 'string'}      
+          - {label: carousel Sub Title, name: 'subTitlecarousel', widget: 'string', required: false}      
+          - label: Lists
+            name: 'lists'
+            widget: "list"
+            create: true
+            collapsed: true
+            fields:
+              - {label: image, name: 'image', widget: 'image'} 
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }

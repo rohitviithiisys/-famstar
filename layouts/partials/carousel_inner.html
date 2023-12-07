@@ -1,7 +1,7 @@
-<!-- test -->
+{{range .Params.carousel}}
 <div class="container" id="clientscroll">
     <section class="customer-logos slider">
-        {{ range .Site.Data.clients.items }}
+        {{ range .lists }}
         <div class="slide">
             <div class="client-slide">
                 <img src="{{ .image | absURL }}" alt="{{.brand}}" class="img-fluid">
@@ -10,3 +10,5 @@
         {{end}}
     </section>
 </div>
+{{end}}
+<!-- Faq Section Ends -->
