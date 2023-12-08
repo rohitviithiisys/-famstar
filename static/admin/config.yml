@@ -62,6 +62,7 @@ collections:
         widget: "list"
         create: true
         collapsed: true
+        required: false
         fields:
           - {label: Section Title, name: 'title', widget: 'string'}      
           - {label: Section Sub Title, name: 'subTitle', widget: 'string', required: false}      
@@ -81,6 +82,7 @@ collections:
         widget: "list"
         create: true
         collapsed: true
+        required: false
         fields:
           - {label: faq Title, name: 'faqtitle', widget: 'string'}      
           - {label: Badge Name, name: 'faqtitleBadge', widget: 'string'}      
@@ -99,6 +101,7 @@ collections:
         widget: "list"
         create: true
         collapsed: true
+        required: false
         fields:
           - {label: carousel Title, name: 'titlecarousel', widget: 'string'}      
           - {label: carousel Sub Title, name: 'subTitlecarousel', widget: 'string', required: false}      

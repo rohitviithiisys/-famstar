@@ -36,15 +36,15 @@ faq:
     lists:
       - hBefaqBoxQuestions: testing
         hBefaqBoxAnswers: testing
-        hrefAnswers: "1"
-        idAnswers: "1"
+        hrefAnswers: "#ss"
+        idAnswers: "ss"
   - faqtitle: testing
     faqtitleBadge: testing
     lists:
       - hBefaqBoxQuestions: testing
         hBefaqBoxAnswers: testing
-        hrefAnswers: "2"
-        idAnswers: "2"
+        hrefAnswers: "#dd"
+        idAnswers: "dd"
 carousel:
   - lists:
       - image: /images/uploads/ec9a0dc26c3.jpg
